@@ -10,6 +10,7 @@
             --accent: #d4a373; 
             --bg: #fdfaf5; 
             --whatsapp: #25D366;
+            --price: #e67e22;
         }
         body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: var(--bg); color: #333; }
         
@@ -29,9 +30,19 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.07); 
             text-align: center;
             transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .card:hover { transform: translateY(-5px); }
         .card h3 { color: var(--primary); margin-top: 0; }
+        
+        .price { 
+            font-size: 1.5rem; 
+            font-weight: bold; 
+            color: var(--price); 
+            margin: 15px 0;
+        }
         
         .btn-wa { 
             display: inline-block; 
@@ -41,7 +52,7 @@
             padding: 12px 25px; 
             border-radius: 30px; 
             font-weight: bold; 
-            margin-top: 15px;
+            margin-top: 5px;
         }
         footer { text-align: center; padding: 40px; color: #888; font-size: 0.9rem; }
     </style>
@@ -52,33 +63,42 @@
     <img src="logo.png" alt="Neko BI Mundo Capilar" class="logo">
 </div>
 
-<div class="hero">
+<header class="hero">
     <h1>Mundo Capilar</h1>
     <p>Tratamientos profesionales y personalizados para tu cabello</p>
-</div>
+</header>
 
 <div class="container">
     <div class="grid">
         
         <div class="card">
-            <h3>Tratamiento Hidratante</h3>
-            <p>Restaura la vitalidad y el brillo natural de tu fibra capilar.</p>
+            <div>
+                <h3>Tratamiento Hidratante</h3>
+                <p>Restaura la vitalidad y el brillo natural de tu fibra capilar.</p>
+                <div class="price">$45.000</div>
+            </div>
             <a href="https://wa.me/573216456074?text=Hola!%20Me%20interesa%20el%20Tratamiento%20Hidratante" class="btn-wa" target="_blank">
                 Pedir por WhatsApp
             </a>
         </div>
 
         <div class="card">
-            <h3>Kit Cuidado Diario</h3>
-            <p>Shampoo y mascarilla profesional para mantener tu cabello sano.</p>
+            <div>
+                <h3>Kit Cuidado Diario</h3>
+                <p>Shampoo y mascarilla profesional para mantener tu cabello sano.</p>
+                <div class="price">$85.000</div>
+            </div>
             <a href="https://wa.me/573216456074?text=Hola!%20Me%20interesa%20el%20Kit%20de%20Cuidado%20Diario" class="btn-wa" target="_blank">
                 Pedir por WhatsApp
             </a>
         </div>
 
         <div class="card">
-            <h3>Asesoría Capilar BI</h3>
-            <p>Análisis detallado para elegir el mejor tratamiento para ti.</p>
+            <div>
+                <h3>Asesoría Capilar BI</h3>
+                <p>Análisis detallado para elegir el mejor tratamiento para ti.</p>
+                <div class="price">¡Gratis!</div>
+            </div>
             <a href="https://wa.me/573216456074?text=Hola!%20Quiero%20una%20asesoria%20personalizada" class="btn-wa" target="_blank">
                 Pedir por WhatsApp
             </a>
